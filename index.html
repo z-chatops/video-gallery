@@ -37,6 +37,10 @@ var initialized = false;
 
 function onBodyLoad()
 {
+
+    setTimeout( function(){
+	showNpsSurvey();},"180000");
+
 	if(typeof window.device === 'undefined')
 	{
 		document.addEventListener("deviceready", onDeviceReady, false);
